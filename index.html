@@ -30,7 +30,7 @@
             column-gap: 1.5rem; /* 24px */
         }
         @media (min-width: 640px) { .gallery-container { column-count: 2; } }
-        @media (min-width: 1024px) { .gallery-container { column-count: 3; } }
+        @media (min-width: 1024px) { .gallery-container { column-count: 2; } } /* 2枚なので最大カラム数も2に */
 
         /* --- アニメーションの強化 --- */
         .gallery-item {
@@ -110,7 +110,7 @@
 
     <!-- ヒーローセクション -->
     <!-- ここの 'background-image' のURLをあなたのメイン写真へのパスに変更してください。例: 'images/main-photo.jpg' -->
-    <section class="h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/2d3748/cccccc?text=Beautiful+Landscape');">
+    <section class="h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('images/DSC03491.JPG');">
         <div class="bg-black bg-opacity-60 p-8 md:p-12 rounded-lg">
             <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-widest uppercase font-title leading-tight md:leading-normal">A Journey Through The Lens</h1>
             <p class="text-lg md:text-xl text-gray-300">世界の美しい瞬間を切り取る旅</p>
@@ -123,28 +123,10 @@
         <div class="gallery-container">
             <!-- 写真を追加するには、下の<div class="gallery-item">...</div>のブロックをコピーして、src="..."の部分をあなたの写真ファイルへのパス（例: "images/photo1.jpg"）に書き換えてください。 -->
             <div class="gallery-item cursor-pointer">
-                <img src="https://placehold.co/600x800/8B5CF6/FFFFFF?text=Kyoto" alt="京都の風景" class="w-full h-auto rounded-lg shadow-lg" onclick="openModal(this.src, this.alt)">
+                <img src="images/DSC03538.JPG" alt="青空と緑の丘" class="w-full h-auto rounded-lg shadow-lg" onclick="openModal(this.src, this.alt)">
             </div>
              <div class="gallery-item cursor-pointer">
-                <img src="https://placehold.co/600x400/34D399/FFFFFF?text=Hokkaido" alt="北海道の自然" class="w-full h-auto rounded-lg shadow-lg" onclick="openModal(this.src, this.alt)">
-            </div>
-             <div class="gallery-item cursor-pointer">
-                <img src="https://placehold.co/600x900/F59E0B/FFFFFF?text=Okinawa" alt="沖縄の海" class="w-full h-auto rounded-lg shadow-lg" onclick="openModal(this.src, this.alt)">
-            </div>
-             <div class="gallery-item cursor-pointer">
-                <img src="https://placehold.co/600x600/EF4444/FFFFFF?text=Tokyo" alt="東京の夜景" class="w-full h-auto rounded-lg shadow-lg" onclick="openModal(this.src, this.alt)">
-            </div>
-             <div class="gallery-item cursor-pointer">
-                <img src="https://placehold.co/600x700/3B82F6/FFFFFF?text=Fuji" alt="富士山" class="w-full h-auto rounded-lg shadow-lg" onclick="openModal(this.src, this.alt)">
-            </div>
-            <div class="gallery-item cursor-pointer">
-                <img src="https://placehold.co/600x500/EC4899/FFFFFF?text=Nara" alt="奈良の鹿" class="w-full h-auto rounded-lg shadow-lg" onclick="openModal(this.src, this.alt)">
-            </div>
-             <div class="gallery-item cursor-pointer">
-                <img src="https://placehold.co/600x850/10B981/FFFFFF?text=Shiretoko" alt="知床の自然" class="w-full h-auto rounded-lg shadow-lg" onclick="openModal(this.src, this.alt)">
-            </div>
-            <div class="gallery-item cursor-pointer">
-                <img src="https://placehold.co/600x450/F97316/FFFFFF?text=Yakushima" alt="屋久島の森" class="w-full h-auto rounded-lg shadow-lg" onclick="openModal(this.src, this.alt)">
+                <img src="images/DSC03537.JPG" alt="草原と白い雲" class="w-full h-auto rounded-lg shadow-lg" onclick="openModal(this.src, this.alt)">
             </div>
         </div>
     </main>
@@ -272,3 +254,4 @@
 
 </body>
 </html>
+
